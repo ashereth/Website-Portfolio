@@ -17,15 +17,15 @@ def create_app():
         },
         {
             "name": "Microblog app using Flask and MongoDB",
-            "thumb": "img/microblog.png",
-            "hero": "img/microblog-hero.png",
+            "thumb": "img/microblog.PNG",
+            "hero": "img/microblog-hero.PNG",
             "categories": ["python", 'css', 'html'],
             'slug': 'microblog',
             'prod': 'https://flask-microblog-utz5.onrender.com/'
         },
     ]
     # create a dictionary to map slugs to projects so that we don't have to loop through all projects
-    # whenever we want to get a slug 
+    # whenever we want to get a slug
     slug_to_project = {project['slug']: project for project in projects}
 
     @app.route("/")
