@@ -25,7 +25,7 @@ def create_app():
         },
     ]
     # create a dictionary to map slugs to projects so that we don't have to loop through all projects
-    # whenever we want to get a slug
+    # whenever we want to get a slug 
     slug_to_project = {project['slug']: project for project in projects}
 
     @app.route("/")
