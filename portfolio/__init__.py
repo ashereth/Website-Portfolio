@@ -23,6 +23,14 @@ def create_app():
             'slug': 'microblog',
             'prod': 'https://flask-microblog-utz5.onrender.com/'
         },
+        {
+            "name": "A simple Cookie Clicker style game",
+            "thumb": "img/weight.jpg",
+            "hero": "img/weight-hero.jpg",
+            "categories": ["python", 'css', 'html'],
+            'slug': 'weight-clicker',
+            'prod': 'https://weight-clicker.onrender.com/'
+        }
     ]
     # create a dictionary to map slugs to projects so that we don't have to loop through all projects
     # whenever we want to get a slug
