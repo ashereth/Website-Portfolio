@@ -30,6 +30,14 @@ def create_app():
             "categories": ["python", 'css', 'html'],
             'slug': 'weight-clicker',
             'prod': 'https://weight-clicker.onrender.com/'
+        },
+        {
+            "name": "Movie Watchlist",
+            "thumb": "img/movie.jpg",
+            "hero": "img/movie-hero.jpg",
+            "categories": ["python", 'css', 'html'],
+            'slug': 'movie-watchlist',
+            'prod': 'https://movie-watchlist-eyzg.onrender.com/'
         }
     ]
     # create a dictionary to map slugs to projects so that we don't have to loop through all projects
