@@ -233,3 +233,8 @@ body {
     margin-right: 0.25rem;
     transform: translateY(2px);
 }
+
+.hero__postit {
+    width: 60%;
+    margin-bottom: 1.5rem;
+}
