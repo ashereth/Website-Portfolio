@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% block content %}
+    <main class="main main--project">
+        <div>
+            <img
+                class="hero"
+                src="{{ url_for('static', filename=project['hero']) }}"
+                alt="A social media picture representation."
+            />
+
+            <article class="project">
+                <article class="project__content">
+                    <h2 class="project__heading">{{ project['name'] }}</h2>
+
+                    <p>
+                        After learning how to develop websites and following allong the course 
+                        'Web Developer Bootcamp with Flask and Python in 2023' by Jose Salvatierra,
+                        I decided to make this project to test my new skills. This website is a simple
+                        social media style app where users can create accounts, login, and make posts.
+                        After logging in users can also follow other accounts that they can find on the
+                        explore page. The explore page displays all posts by all accounts. Once the user 
+                        has followed at least one account they will be able to see the posts from the accounts 
+                        they follow on their following page.
+                    </p>
+                    <p>
+                        I didn't spend much time writing css to make this website look good on mobile so for the 
+                        best experience please access this website from a computer with a large screen.
+                        Enjoy :).
+                    </p>
+
+                </article>
+
+                <section>
+                    <article class="project__meta-group">
+                        <h3 class="project__heading project__heading--meta">Technologies used</h3>
+
+                        <ul class="technology-list">
+                            <li class="technology-list__item">Python</li>
+                            <li class="technology-list__item">HTML</li>
+                            <li class="technology-list__item">CSS</li>
+                        </ul>
+                    </article>
+
+                    <a class="cta" href="{{ project['prod'] }}">
+                        <img class="cta__icon" src="{{ url_for('static', filename='img/pointer.svg') }}">
+                        View in production
+                    </a>
+                </section>
+            </article>
+        </div>
+    </main>
+{% endblock %}
