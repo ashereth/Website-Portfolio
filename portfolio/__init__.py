@@ -8,20 +8,12 @@ def create_app():
 
     projects = [
         {
-            "name": "Habit tracking app using Flask and MongoDB",
-            "thumb": "img/habit-tracking.png",
-            "hero": "img/habit-tracking-hero.png",
+            "name": "Postit",
+            "thumb": "img/postit.png",
+            "hero": "img/postit-hero.jpg",
             "categories": ["python", 'css', 'html'],
-            'slug': 'habit-tracking',
-            'prod': 'https://flask-habit-tracker-91g6.onrender.com/'
-        },
-        {
-            "name": "Microblog app using Flask and MongoDB",
-            "thumb": "img/microblog.PNG",
-            "hero": "img/microblog-hero.PNG",
-            "categories": ["python", 'css', 'html'],
-            'slug': 'microblog',
-            'prod': 'https://flask-microblog-utz5.onrender.com/'
+            'slug': 'postit',
+            'prod': 'https://postit-3n3g.onrender.com'
         },
         {
             "name": "A simple Cookie Clicker style game",
@@ -32,21 +24,21 @@ def create_app():
             'prod': 'https://weight-clicker.onrender.com/'
         },
         {
+            "name": "Habit tracking app using Flask and MongoDB",
+            "thumb": "img/habit-tracking.png",
+            "hero": "img/habit-tracking-hero.png",
+            "categories": ["python", 'css', 'html', 'Udemy'],
+            'slug': 'habit-tracking',
+            'prod': 'https://flask-habit-tracker-91g6.onrender.com/'
+        },
+        {
             "name": "Movie Watchlist",
             "thumb": "img/movie.jpg",
             "hero": "img/movie-hero.jpg",
-            "categories": ["python", 'css', 'html'],
+            "categories": ["python", 'css', 'html', 'Udemy'],
             'slug': 'movie-watchlist',
             'prod': 'https://movie-watchlist-eyzg.onrender.com/'
         },
-        {
-            "name": "Postit",
-            "thumb": "img/postit.png",
-            "hero": "img/postit-hero.jpg",
-            "categories": ["python", 'css', 'html'],
-            'slug': 'postit',
-            'prod': 'https://postit-3n3g.onrender.com'
-        }
     ]
     # create a dictionary to map slugs to projects so that we don't have to loop through all projects
     # whenever we want to get a slug
